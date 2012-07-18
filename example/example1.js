@@ -1,4 +1,4 @@
-var context = require('../jscript/context');
+var nodeProxy = require('../jscript/nodeProxy');
 
 function ObjectOne(){
 	function helloWorld(){
@@ -13,7 +13,7 @@ function ObjectTwo(){
 	function init(){
 		var contextObject = { name: 'iain' };
 		var objectOne = new ObjectOne();
-		context(objectOne.helloWorld, contextObject)();
+		nodeProxy(objectOne.helloWorld, contextObject)();
 	}
 	return {
 		init: init

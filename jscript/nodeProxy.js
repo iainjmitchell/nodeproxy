@@ -1,7 +1,7 @@
 (function() {
-  var proxy;
+  var nodeProxy;
 
-  proxy = function(func, callingproxy) {
+  nodeProxy = function(func, callingproxy) {
     var proxyFunction;
     proxyFunction = function() {
       return func.apply(callingproxy, arguments);
@@ -9,6 +9,6 @@
     return proxyFunction;
   };
 
-  module.exports = proxy;
+  module.exports = nodeProxy;
 
 }).call(this);

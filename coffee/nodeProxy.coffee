@@ -1,6 +1,6 @@
-proxy = (func, callingproxy) ->
+nodeProxy = (func, callingproxy) ->
 	proxyFunction = () -> 
 		func.apply(callingproxy, arguments)	
 	proxyFunction
 
-module.exports = proxy
+module.exports = nodeProxy

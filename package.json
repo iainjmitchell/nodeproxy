@@ -1,7 +1,7 @@
 {
-	"name": "proxy",
+	"name": "nodeProxy",
 	"description": "A port of the jQuery proxy function to nodeJs",
-	"keywords": ["proxy"],
+	"keywords": ["proxy", "context", "apply"],
 	"author": "IainJMitchell",
   	"version": "1.0.0",
   	"licenses": [{
