@@ -1,0 +1,136 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.1.16
+info using node@v0.6.16-pre
+verbose config file /home/iain/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+verbose caching /home/iain/workspace/proxy/package.json
+verbose loadDefaults proxy@1.0.0
+info prepublish proxy@1.0.0
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+verbose caching package.json
+verbose loadDefaults proxy@1.0.0
+verbose tar.pack [ '/tmp/npm-1342640435127/1342640435127-0.6706515653058887/tmp.tgz',
+verbose tar.pack   '.' ]
+verbose tarball /tmp/npm-1342640435127/1342640435127-0.6706515653058887/tmp.tgz
+verbose folder .
+verbose unpack /tmp/npm-1342640435127/1342640435127-0.6706515653058887/tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly modified mode [ 'package.json', 436, 420 ]
+silly extracting entry README.md
+silly modified mode [ 'README.md', 436, 420 ]
+silly extracting entry Cakefile
+silly modified mode [ 'Cakefile', 436, 420 ]
+silly extracting entry coffee/proxy.coffee
+silly modified mode [ 'coffee/proxy.coffee', 436, 420 ]
+silly extracting entry jscript/proxy.js
+silly modified mode [ 'jscript/proxy.js', 436, 420 ]
+silly extracting entry example/example1.js
+silly modified mode [ 'example/example1.js', 436, 420 ]
+verbose caching /tmp/npm-1342640435127/1342640435127-0.6706515653058887/package/package.json
+verbose loadDefaults proxy@1.0.0
+verbose from cache /tmp/npm-1342640435127/1342640435127-0.6706515653058887/package/package.json
+verbose tar.pack [ '/home/iain/.npm/proxy/1.0.0/package.tgz',
+verbose tar.pack   '/tmp/npm-1342640435127/1342640435127-0.6706515653058887/package' ]
+verbose tarball /home/iain/.npm/proxy/1.0.0/package.tgz
+verbose folder /tmp/npm-1342640435127/1342640435127-0.6706515653058887/package
+verbose unpack /home/iain/.npm/proxy/1.0.0/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry README.md
+silly extracting entry Cakefile
+silly extracting entry coffee/proxy.coffee
+silly extracting entry jscript/proxy.js
+silly extracting entry example/example1.js
+verbose caching /home/iain/.npm/proxy/1.0.0/package/package.json
+verbose loadDefaults proxy@1.0.0
+silly updated sha bytes 1275
+info shasum 9f8ed621e3aa52533dc1f4991b8a565beccc7d44
+info shasum /home/iain/.npm/proxy/1.0.0/package.tgz
+verbose from cache /home/iain/.npm/proxy/1.0.0/package/package.json
+verbose chmod /home/iain/.npm/proxy/1.0.0/package.tgz 644
+verbose chown [ '/home/iain/.npm/proxy/1.0.0/package.tgz', 1000, 1000 ]
+silly publish { name: 'proxy',
+silly publish   description: 'A port of the jQuery proxy function to nodeJs',
+silly publish   keywords: [ 'proxy' ],
+silly publish   author: { name: 'IainJMitchell' },
+silly publish   version: '1.0.0',
+silly publish   licenses: [ { type: 'MIT' } ],
+silly publish   directories: { lib: './jscript' },
+silly publish   main: './jscript/proxy.js',
+silly publish   _npmUser: { name: 'iainjmitchell', email: 'iainjmitchell@gmail.com' },
+silly publish   _id: 'proxy@1.0.0',
+silly publish   dependencies: {},
+silly publish   devDependencies: {},
+silly publish   optionalDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.1.16',
+silly publish   _nodeVersion: 'v0.6.16-pre',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '9f8ed621e3aa52533dc1f4991b8a565beccc7d44',
+silly publish      tarball: 'http://registry.npmjs.org/proxy/-/proxy-1.0.0.tgz' },
+silly publish   readme: '# proxy\nA port of the [jQuery](http://api.jquery.com/jQuery.proxy/) proxy functionality to NodeJS.\n\n### Installation\nThe easiest way to install is through the Node Package Manager ([NPM](http://npmjs.org/)):\n\n``` js\nnpm install proxy\n```\n\n### Usage\n``` js \nvar proxy = require(\'proxy\');\n\nfunction ObjectOne(){\n\tfunction helloWorld(){\n\t\tconsole.log("Hello " + this.name);\n\t}\n\treturn {\n\t\thelloWorld: helloWorld\n\t}\n}\n\nfunction ObjectTwo(){\n\tfunction init(){\n\t\tvar contextObject = { name: \'iain\' };\n\t\tvar objectOne = new ObjectOne();\n\t\tproxy(objectOne.helloWorld, contextObject)();\n\t}\n\treturn {\n\t\tinit: init\n\t}\n}\n\nvar objectTwo = new ObjectTwo();\nobjectTwo.init();\n//Console will display..\n//Hello iain\n```\n\n' }
+verbose raw, before any munging proxy
+verbose url resolving [ 'https://registry.npmjs.org/', './proxy' ]
+verbose url resolved https://registry.npmjs.org/proxy
+http PUT https://registry.npmjs.org/proxy
+http 409 https://registry.npmjs.org/proxy
+verbose raw, before any munging proxy
+verbose url resolving [ 'https://registry.npmjs.org/', './proxy' ]
+verbose url resolved https://registry.npmjs.org/proxy
+http GET https://registry.npmjs.org/proxy
+http 200 https://registry.npmjs.org/proxy
+verbose raw, before any munging proxy/1.0.0/-tag/latest
+verbose url resolving [ 'https://registry.npmjs.org/', './proxy/1.0.0/-tag/latest' ]
+verbose url resolved https://registry.npmjs.org/proxy/1.0.0/-tag/latest
+http PUT https://registry.npmjs.org/proxy/1.0.0/-tag/latest
+http 403 https://registry.npmjs.org/proxy/1.0.0/-tag/latest
+ERR! Error sending version data
+ERR! Error: forbidden user: iainjmitchell not authorized to modify proxy
+ERR! Changed: description "EventEmitter / Stream proxy for node.js" -> "A port of the jQuery proxy function to nodeJs"
+ERR! Changed: dist-tags.latest "0.0.1" -> "1.0.0"
+ERR! Added: versions.1.0.0
+ERR! Changed: time.modified "2011-08-31T18:23:47.054Z" -> "2012-07-18T19:40:38.885Z"
+ERR! Added: time.1.0.0
+ERR! Changed: author.name "TJ Holowaychuk" -> "IainJMitchell"
+ERR! Deleted: author.email
+ERR! Changed Type: author.email
+ERR! Changed: author.email "tj@vision-media.ca" -> undefined: proxy/1.0.0/-tag/latest
+ERR!     at Request._callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:183:12)
+ERR!     at Request.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:605:16)
+ERR!     at Request.emit (events.js:67:17)
+ERR!     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:564:14)
+ERR!     at IncomingMessage.emit (events.js:88:20)
+ERR!     at HTTPParser.onMessageComplete (http.js:137:23)
+ERR!     at CleartextStream.ondata (http.js:1150:24)
+ERR!     at CleartextStream._push (tls.js:375:27)
+ERR!     at SecurePair.cycle (tls.js:734:20)
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 3.2.0-26-generic
+ERR! command "node" "/usr/local/bin/npm" "publish"
+ERR! cwd /home/iain/workspace/proxy
+ERR! node -v v0.6.16-pre
+ERR! npm -v 1.1.16
+ERR! message forbidden user: iainjmitchell not authorized to modify proxy
+ERR! message Changed: description "EventEmitter / Stream proxy for node.js" -> "A port of the jQuery proxy function to nodeJs"
+ERR! message Changed: dist-tags.latest "0.0.1" -> "1.0.0"
+ERR! message Added: versions.1.0.0
+ERR! message Changed: time.modified "2011-08-31T18:23:47.054Z" -> "2012-07-18T19:40:38.885Z"
+ERR! message Added: time.1.0.0
+ERR! message Changed: author.name "TJ Holowaychuk" -> "IainJMitchell"
+ERR! message Deleted: author.email
+ERR! message Changed Type: author.email
+ERR! message Changed: author.email "tj@vision-media.ca" -> undefined: proxy/1.0.0/-tag/latest
+verbose exit [ 1, true ]

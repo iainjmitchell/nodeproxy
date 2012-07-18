@@ -1,16 +1,16 @@
-# context
+# proxy
 A port of the [jQuery](http://api.jquery.com/jQuery.proxy/) proxy functionality to NodeJS.
 
 ### Installation
 The easiest way to install is through the Node Package Manager ([NPM](http://npmjs.org/)):
 
 ``` js
-npm install context
+npm install proxy
 ```
 
 ### Usage
 ``` js 
-var context = require('context');
+var proxy = require('proxy');
 
 function ObjectOne(){
 	function helloWorld(){
@@ -25,7 +25,7 @@ function ObjectTwo(){
 	function init(){
 		var contextObject = { name: 'iain' };
 		var objectOne = new ObjectOne();
-		context(objectOne.helloWorld, contextObject)();
+		proxy(objectOne.helloWorld, contextObject)();
 	}
 	return {
 		init: init

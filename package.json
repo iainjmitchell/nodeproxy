@@ -1,0 +1,14 @@
+{
+	"name": "proxy",
+	"description": "A port of the jQuery proxy function to nodeJs",
+	"keywords": ["proxy"],
+	"author": "IainJMitchell",
+  	"version": "1.0.0",
+  	"licenses": [{
+    	"type": "MIT"
+  	}],
+  	"directories": {
+    	"lib": "./jscript"
+  	},
+  	"main":  "./jscript/proxy.js"
+}
