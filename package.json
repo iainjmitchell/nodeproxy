@@ -1,5 +1,5 @@
 {
-	"name": "nodeProxy",
+	"name": "nodeproxy",
 	"description": "A port of the jQuery proxy function to nodeJs",
 	"keywords": ["proxy", "context", "apply"],
 	"author": "IainJMitchell",
@@ -10,5 +10,5 @@
   	"directories": {
     	"lib": "./jscript"
   	},
-  	"main":  "./jscript/proxy.js"
+  	"main":  "./jscript/nodeproxy.js"
 }

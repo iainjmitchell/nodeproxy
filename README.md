@@ -1,16 +1,16 @@
-# nodeProxy
+# nodeproxy
 A port of the [jQuery](http://api.jquery.com/jQuery.proxy/) proxy functionality to NodeJS.
 
 ### Installation
 The easiest way to install is through the Node Package Manager ([NPM](http://npmjs.org/)):
 
 ``` js
-npm install nodeProxy
+npm install nodeproxy
 ```
 
 ### Usage
 ``` js 
-var nodeProxy = require('nodeProxy');
+var nodeproxy = require('nodeproxy');
 
 function ObjectOne(){
 	function helloWorld(){
@@ -25,7 +25,7 @@ function ObjectTwo(){
 	function init(){
 		var contextObject = { name: 'iain' };
 		var objectOne = new ObjectOne();
-		nodeProxy(objectOne.helloWorld, contextObject)();
+		nodeproxy(objectOne.helloWorld, contextObject)();
 	}
 	return {
 		init: init
