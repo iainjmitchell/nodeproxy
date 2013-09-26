@@ -3,12 +3,16 @@
 	"description": "A port of the jQuery proxy function to nodeJs",
 	"keywords": ["proxy", "context", "apply"],
 	"author": "IainJMitchell",
-  	"version": "1.0.0",
-  	"licenses": [{
+  "repository" : { 
+    "type" : "git", 
+    "url" : "http://github.com/iainjmitchell/nodeproxy"
+  },
+  "version": "1.0.0",
+  "licenses": [{
     	"type": "MIT"
-  	}],
-  	"directories": {
-    	"lib": "./jscript"
-  	},
-  	"main":  "./jscript/nodeproxy.js"
+	}],
+	"directories": {
+  	"lib": "./jscript"
+	},
+	"main":  "./jscript/nodeproxy.js"
 }
